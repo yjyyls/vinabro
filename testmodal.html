@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="testmodal.css">
+    <title>Test</title>
+</head>
+
+<body>
+    <button id="open">Open Modal</button>
+    <div class="modal hidden" data-backdrop="static">
+        <div class="modal_overlay">
+            <div class="main">
+                <div class="editorContainer">
+                    <input type='button' value="&#128473;">
+                    <div class="wrap">
+                        <div class="title">Title</div>
+                        <b></b>
+                        <div class="description">
+                            <label class="input-file-button" for="input-file">
+                                &#128247;
+                            </label>
+                            <span class="inputBtnText">이미지 첨부</span>
+                            <input onchange="onFileChange(event)" type="file" id="input-file" style="display:none" accept="image/*">
+                            <img src="" class="uploadImage">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                                Ex porro, accusamus placeat, ipsam qui quo nesciunt mollitia <br>
+                                amet aperiam molestias eligendi excepturi possimus! <br>Nobis quidem, reiciendis neque
+                                illum
+                                modi sequi.<br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                                Ex porro, accusamus placeat, ipsam qui quo nesciunt mollitia <br>
+                                amet aperiam molestias eligendi excepturi possimus! <br>Nobis quidem, reiciendis neque
+                                illum
+                                modi sequi.<br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                                Ex porro, accusamus placeat, ipsam qui quo nesciunt mollitia <br>
+                                amet aperiam molestias eligendi excepturi possimus! <br>Nobis quidem, reiciendis neque
+                                illum
+                                modi sequi.<br>
+                            </p>
+                            <div class="btn">
+                                <button onclick="onEditing(event)" class="editBtn">Edit</button>
+                                <button onclick="delete_desc(event)" class="deleteBtn">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="testmodal.js"></script>
+</body>
+
+</html>

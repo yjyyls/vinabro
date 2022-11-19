@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="profile.css">
+    <title>profile</title>
+</head>
+
+<body>
+    <button id="open">Open Modal</button>
+    <div class="modal hidden" data-backdrop="static">
+        <div class="modal_overlay">
+            <div id="wrap">
+                <div class="profile_box">
+                    <div class="profile_out"><input type='button' value="&#128473;"></div>
+                    <label id="imgLabel" for="imgInput">
+                        <img id="profileView" src="blankProfile.webp" />
+                        <span class="profileBtnText">이미지 클릭 시 수정 가능</span>
+                        <input onchange="onFileChange(event)" id="imgInput" type="file" style="display:none" accept="images/*" />
+                    </label>
+                    <!-- <span class="profile_img"></span> -->
+                    <!-- <img id="profileView" src="blankProfile.webp">
+                    <label class="input-file-button" for="input-file">
+                        &#128393;
+                    </label>                    
+                    <input onchange="onFileChange(event)" type="file" id="input-file" style="display:none" accept="image/*">
+                    <img src="" class="uploadImage">   -->
+                    <!-- <button class="edit_btn">&#128393;</button>                  -->
+                    <!-- <p onclick="#">&#128393;</p> -->
+                    <h2>Profile name</h2>
+                    <b></b>
+                    <div class="btn">
+                        <button onclick="" class="cancelBtn">Cancel</button>
+                        <input id="profileBtn" onclick="save(event)" class="saveBtn" type="submit" value="Save" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="profile.js"></script>
+    
+</body>
+
+</html>
